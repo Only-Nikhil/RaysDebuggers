@@ -4,6 +4,9 @@
   font-size: 10px;
   box-sizing: border-box;
 }
+html,body{
+  height: 100%;
+}
 
 .sc{
   background-color:  #087bdf;
@@ -24,13 +27,11 @@
 }
 .sc ul{
   display: flex;
-  flex-direction: row;
-  margin: 5px;
+  flex-direction: row;  
 }
 .sc li{
   list-style: none;
   padding: 10px;
-  border-radius: 5px;
 }
 .sc a{
   font-family: sans-serif;
@@ -40,7 +41,9 @@
   text-align: right;
   color: #ffffff;
   &:hover{
-    scale: 5.5;
+    border: 1.2px solid #ffffff;
+    border-radius: 6px;
+    text-shadow: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -59,7 +62,112 @@
   border-radius: 10px;
 }
 
-.ft{
-  background-color: rgb(8, 8, 8);
-  width: 100px;
+/* Footer styling  */
+ 
+footer {
+  background-color: #0b1238;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center; 
+  font-family: Arial, sans-serif;
 }
+
+
+footer input[type="email"] {
+  padding: 12px;
+  width: 240px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 10px;
+}
+
+footer button {
+  padding: 10px 15px;
+  background-color: #ff6a28; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: #ff4500;
+}
+
+/* social media icon */
+.social-media-icon {
+  margin: 20px 0;
+}
+
+.social-media-icon a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-media-icon img {
+  width: 24px; 
+  height: 24px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #fff; 
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bottom ul li {
+  margin: 0 15px;
+}
+
+.footer-bottom ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design  */
+@media (max-width: 768px) {
+  footer input[type="email"] {
+      width: 25%;
+      margin-bottom: 10px;
+  }
+  footer button {
+      width: 10%;
+  }
+  .social-media-icon {
+      margin-bottom: 20px;
+  }
+  .sc a{
+    font-size: 16px;
+  }
+  .sc li{
+    margin: 0px;
+    padding: 5px;
+  }
+  .sc ul{
+    margin: 0px;
+  }
+
+
+}
+
