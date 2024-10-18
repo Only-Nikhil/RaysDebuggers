@@ -7,3 +7,17 @@ pdiv.forEach((element) => {
         this.classList.toggle('active');
     });
 });
+const mentors_profile=[
+    {
+        id:'1',
+        name:'John Doe',
+        image:'https://via.placeholder.com/150',
+        designation:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        qualification:['HTML', 'CSS', 'JavaScript'],
+        phoneo:'',
+        phoner:'',
+        mobile:'',
+        email:'',
+        experience:'',
+    }
+]
