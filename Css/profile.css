@@ -12,11 +12,13 @@ html{
     position: relative;
     display: flex;
     width: 100%;
-    padding: 0.2rem 0 1rem 0;
+    padding: 0.2rem 2rem 1rem 0;
 }
 .profile-side-bar{
     padding: 0rem 0.1rem 0.5rem 0rem;
     width: 30%;
+    margin: 20px;
+    border-radius: 15px;
 }
 
 .profile-side-bar>.profile-side-main-div{
@@ -24,26 +26,27 @@ html{
     position: relative;
     margin-top: 0.8rem;
     padding: 10px;
-    box-shadow: 0px 0px 3px rgb(83, 123, 255);
     width: 100%;
     display: flex;
+    border-radius: 15px;
+    border: 2px 2px 2px solid blue ;
     transition: 0.5s;
     z-index: 2;
     background-color: rgb(255, 255, 255);
     
     &:hover{
         /* scale: 1.1; */
-        box-shadow: 0px 0px 5px rgb(7, 24, 255);
+        box-shadow: 0px 0px 5px rgb(21, 22, 23 , .5);
         z-index: 2;
     }
 }
 .profile-side-bar>.profile-side-main-div::before{
     content: '';
     position: absolute;
-    top: 0;
+    top: 10%;
     left: 0;
-    width: 1%;
-    height: 100%;
+    width: 0.5%;
+    height: 80%;
     background-color: rgb(196, 196, 249);
 }
 /* Active state for ::before */
@@ -79,7 +82,7 @@ html{
     height:0;
     width:0;
     left:100%;
-    top:0;
+    top:10%;
     border: 25px solid transparent;
 }
 .profile-side-bar>.profile-side-main-div.active>:after{
@@ -93,10 +96,12 @@ html{
 
 
 .profile-details{
+
     background-color: white;
     width: 70%;
     margin-top: 0.8rem;
-    box-shadow: 0px 0px 4px grey;
+    border-radius: 12px;
+    box-shadow: 0px 2px 5px rgba(48, 49, 51, 0.5);
 }
 
 .profile-details .main-box{

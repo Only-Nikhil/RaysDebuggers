@@ -61,6 +61,25 @@ html{
   border-radius: 10px;
 }
 
+
+
+/* main content Home */
+
+.main_home{
+  height: 72vh;
+  width: 100%;
+  background-image: url(/Media/Blue\ and\ White\ Modern\ Computer\ Presentation.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: ;
+}
+
+.main_home p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4.5rem;
+}
+
+
 /* Footer styling  */
  
 footer {
