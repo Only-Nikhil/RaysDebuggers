@@ -6,6 +6,7 @@
 html{
   font-size: 10px;
 }
+
 .sc{
   background-color:  #087bdf;
   width: 100%;
@@ -15,7 +16,7 @@ html{
   align-items: center;
   padding: 0 20px;
   
-}git p
+}
 .sc #nav{
   justify-content: flex-end;
   display: flex;
