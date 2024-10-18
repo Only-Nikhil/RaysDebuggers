@@ -24,7 +24,7 @@ html{
 .profile-side-bar>.profile-side-main-div{
     cursor: pointer;
     position: relative;
-    margin-top: 0.8rem;
+    margin-top: 1.5rem;
     padding: 10px;
     width: 100%;
     display: flex;
@@ -56,6 +56,7 @@ html{
 .profile-side-bar>div>.left-side>img{
     width: 100%;
     height: 90%;
+    border-radius: 50%;
     padding-top: 10%;
     filter: brightness(1.3);
     border-radius: 0.5rem;
@@ -68,7 +69,7 @@ html{
     letter-spacing: 0.2rem;
     line-height: 3.5rem;    
     padding: 0.5rem;
-    color: blue;
+    color: navy;
     /* text-shadow: 1px 1px 2px rgb(188, 188, 188); */
     font-family: 'Times New Roman', Times, serif;
 }
@@ -96,20 +97,19 @@ html{
 
 
 .profile-details{
-
     background-color: white;
     width: 70%;
     margin-top: 0.8rem;
     border-radius: 12px;
     box-shadow: 0px 2px 5px rgba(48, 49, 51, 0.5);
+    color: rgb(107, 107, 107);
 }
 
 .profile-details .main-box{
-    display: flex;
-    /* border: 1px solid black; */
     margin-top: 5%;
     width: 100%;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     margin: auto;
 }
 .profile-details .heading{
@@ -117,44 +117,98 @@ html{
     letter-spacing: 1px;
     word-spacing: 5px;
     padding: 2rem;
+    color: navy;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    text-decoration: underline;
     text-align: center;
 }
 
-.profile-details .main-box .left-box{
+.profile-details .main-box .first-box{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    gap: 5%;
 }
 
-.profile-details .main-box .left-box .child-boxes{
+.profile-details .main-box .first-box .child-boxes{
     width: 45%;
     position: relative;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 3rem;
-    /* background-color: rgb(231, 255, 255); */
     padding: 3%;
-    margin-top: 3rem;
     border-radius: 5px;
 }
 
-.profile-details .main-box .left-box .child-boxes .img-box{
-    position: absolute;
-    left: 20%;
-    top: 0% ;
-}
-
-.profile-details .main-box .left-box .img-box{
-    position: absolute;
-    top: 0;
-    left: 20%;
-}
-
-.profile-details .main-box .left-box .img-box img{
+.profile-details .main-box .first-box .img-box img{
     height: 100%;
     width: 100%;
-    border: 2px solid white;
-    box-shadow: 0px 0px 4px black;
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px black;
     filter: brightness(1.3);
 }
+.profile-details .main-box .other-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.profile-details .main-box .other-box .child-boxes{
+    width: 75%;
+    position: relative;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    padding: 3%;
+    border-radius: 5px; 
+}
+.profile-details .main-box .other-box .child-boxes h5{
+    font-size: 2.5rem;
+    padding: 0.2rem;
+    color: navy;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+.profile-details .main-box .other-box .child-boxes>div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile-details .main-box .other-box .child-boxes>div div{
+    min-width: 20%;
+}
+.profile-details .main-box .slot-box .heading{
+    font-size: 2.5rem;
+    padding: 0.2rem;
+    color: navy;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+    padding-left: 1rem;   
+}
 
+.profile-details .main-box .slot-book{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding-top: 1rem;
+}
+
+.profile-details .main-box .slot-box button {
+    border: 1px solid green;
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #aaedae;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px black;
+}
+.profile-details .main-box .other-box .child-boxes .texts{
+    width: 100%;
+}
+.profile-details .main-box .other-box .child-boxes .texts div{
+    min-width: fit-content;
+    padding: 1rem 1.5rem 1rem 1rem;
+}
