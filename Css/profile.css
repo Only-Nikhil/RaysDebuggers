@@ -30,7 +30,7 @@ body {
     width: 30%;
     margin: 20px;
     border-radius: 15px;
-    transition: width 0.5s;
+    transition: 0.5s;
 }
 
 /* Sidebar Items */
@@ -41,6 +41,7 @@ body {
     padding: 10px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     border-radius: 15px;
     border: 2px solid blue;
     transition: 0.5s;
@@ -146,6 +147,8 @@ body {
     flex-wrap: wrap;
     width: 100%;
     gap: 2rem;
+    background-color: rgb(255, 247, 199);
+    border-radius: 10px;
 }
 
 .profile-details .first-box .child-boxes {
@@ -155,10 +158,26 @@ body {
     padding: 3%;
     border-radius: 5px;
 }
-
-.profile-details .first-box .img-box img {
+.profile-details .first-box .img-box div{
+    width: fit-content;
+    height: 80%;
     width: 100%;
     border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10%;
+    margin-left: 20%;
+    border: 4px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px black;
+}
+.profile-details .first-box .child-boxes2{
+    width: 70%;
+    line-height: 4rem;
+    margin-left: 2rem;
+}
+.profile-details .first-box .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     box-shadow: 0px 0px 2px black;
     filter: brightness(1.3);
 }
@@ -243,13 +262,31 @@ body {
 }
 
 @media (max-width: 768px) {
-    .profile-section {
-        flex-direction: column;
+    .profile-section{
+        flex-wrap: wrap-reverse;
+    }
+    .profile-side-bar{
+        display: flex;
+        gap: 2rem;
+        overflow-x: scroll;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    }
+    .profile-side-bar > .profile-side-main-div{
+        min-width: 80%;
     }
 
     .profile-side-bar, .profile-details {
         width: 100%;
         margin: 0;
+    }
+    .profile-details .first-box .img-box div{
+        width: 100%;
+        margin-left: 100%;
+    }
+    .profile-details .first-box{
+        flex-wrap: wrap;
     }
 
     .profile-details .first-box .child-boxes {
@@ -264,6 +301,10 @@ body {
 
     .profile-details .heading {
         font-size: 2.5rem;
+    }
+    .profile-details .first-box .img-box div{
+        width: 100%;
+        margin-left: 60%;
     }
 
     .profile-details .first-box .child-boxes,
