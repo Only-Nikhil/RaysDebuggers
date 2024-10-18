@@ -10,7 +10,7 @@ body{
   background: #ffffff;
 }
 
-
+/* Top navigation bar */
 .sc{
   background-color: #0044d7;
   width: 100%;
@@ -63,7 +63,6 @@ body{
   background-color: white;
   padding: 12px;
   margin-left: 10px;
-  border-radius: 10px;
 }
 
 
@@ -114,8 +113,25 @@ body{
   display: flex;
 }
 
+.right-side-img {
+  flex: 0 0 60%;
+  display: flex;
+  justify-content: center;
+}
+
 .right-side-img img {
   max-width: 100%;
+}
+
+#gap{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  width: fit-content;
+  text-align: center;
+  background: #00ff2f ;
+  padding: 15px;
+  border-radius:0px 15px;
 }
 
 
@@ -123,7 +139,7 @@ body{
 /* Footer styling  */
  
 footer {
-  background-color: #2a1f42;
+  background-color: #0b1238;
   color: #fff;
   padding: 40px 20px;
   text-align: center; 
