@@ -64,6 +64,54 @@ export const allmentors = [
         availableSlots: ["2:00 PM", "4:00 PM - 5:00 PM"],
         bookedSlots: [] // this will keep booked slots
     },
+    {
+        id: 5,
+        image: "/Media/Dr_Major_Singh_foraya.jpg",
+        name: "Dr. Major Singh Goraya",
+        typeOfRespond: "Quick Responder",
+        designation: "Professor",
+        where:"SLIET",
+        experience: "<ul><li>Professor, SLIET Longowal since 30/09/2019</li><li>Associate Professor, SLIET, Longowal from 22/06/2010 to 29/09/2019</li><li>Assistant Professor, SLIET, Longowal from 22/06/2007 to 21/06/2010</li><li>Lecturer, Punjabi University from 07/08/1998 to 21/06/2007</li></ul>",
+        rating: {
+            star: "4",
+            review: "23"
+        },
+        guidance: ["Computer Science and Engineering"],
+        availableSlots: ["8:00 PM - 9:00 PM", "12:00 AM - 1:00 AM"],
+        bookedSlots: [] // this will keep booked slots
+    },
+    {
+        id: 6,
+        image: "/Media/Dr_Manoj_Sachan.jpg",
+        name: "Dr. Manoj Sachan",
+        typeOfRespond: "Top Mentor",
+        designation: "Professor",
+        where:"SLIET",
+        experience: "<ul><li>As Professor in Computer Science & Engineering , SLIET Longowal  (since 2019 till date)</li><li>As Associate Professor in Computer Science & Engineering , SLIET Longowal , 13 years (2006-2019)</li></ul>",
+        rating: {
+            star: "4",
+            review: "23"
+        },
+        guidance: ["Computer Science and Engineering"],
+        availableSlots: ["6:00 PM - 7:00 PM", "6:00 AM - 7:00 AM"],
+        bookedSlots: [] // this will keep booked slots
+    },
+    {
+        id: 7,
+        image: "/Media/Dr_amar_nath.jpg",
+        name: "Dr. Amar Nath",
+        typeOfRespond: "Quick Responder",
+        designation: "Assistant Professor",
+        where:"SLIET",
+        experience: "<ul><li>January 13, 2020, to October  29, 2020, worked as an Assistant Professor in the Department of School of Computing, DIT University, Dehradun.</li><li>July 01, 2014, to December 31, 2014, Junior Research Fellow (JRF) at the Department of Computer Science & Engineering, Indian Institute of Technology Roorkee, India.</li></ul>",
+        rating: {
+            star: "4",
+            review: "23"
+        },
+        guidance: ["Computer Science and Engineering"],
+        availableSlots: ["6:00 PM - 7:00 PM", "6:00 AM - 7:00 AM"],
+        bookedSlots: [] // this will keep booked slots
+    },
 ];
 // show mentors slots
 function showAllMentors() {
