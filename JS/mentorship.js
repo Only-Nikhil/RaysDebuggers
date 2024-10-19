@@ -2,7 +2,7 @@
 export const allmentors = [
     {
         id: 1,
-        image: "/Media/Dr_Birmohan_singh.jpg",
+        image: "Media/Dr_Birmohan_singh.jpg",
         name: "Dr. Birmohan Singh",
         typeOfRespond: "Quick Responder",
         designation: "Professor",
@@ -18,7 +18,7 @@ export const allmentors = [
     },
     {
         id: 2,
-        image: "/Media/Dr_Damanpreet_singh.jpg",
+        image: "Media/Dr_Damanpreet_singh.jpg",
         name: "Dr. Damanpreet Singh",
         typeOfRespond: "Top Mentor",
         designation: "Professor",
@@ -34,7 +34,7 @@ export const allmentors = [
     },
     {
         id: 3,
-        image: "/Media/Dr_Gurjinder_Kaur.jpg",
+        image: "Media/Dr_Gurjinder_Kaur.jpg",
         name: "Dr. Gurjinder Kaur",
         typeOfRespond: "Top Mentor",
         designation: "Associate Professor",
@@ -50,7 +50,7 @@ export const allmentors = [
     },
     {
         id: 4,
-        image: "/Media/Dr_Jagdeep_Singh.jpg",
+        image: "Media/Dr_Jagdeep_Singh.jpg",
         name: "Dr. Jagdeep Singhr",
         typeOfRespond: "Quick Responder",
         designation: "Assistant Professor",
@@ -66,7 +66,7 @@ export const allmentors = [
     },
     {
         id: 5,
-        image: "/Media/Dr_Major_Singh_foraya.jpg",
+        image: "Media/Dr_Major_Singh_foraya.jpg",
         name: "Dr. Major Singh Goraya",
         typeOfRespond: "Quick Responder",
         designation: "Professor",
@@ -82,7 +82,7 @@ export const allmentors = [
     },
     {
         id: 6,
-        image: "/Media/Dr_Manoj_Sachan.jpg",
+        image: "Media/Dr_Manoj_Sachan.jpg",
         name: "Dr. Manoj Sachan",
         typeOfRespond: "Top Mentor",
         designation: "Professor",
@@ -98,7 +98,7 @@ export const allmentors = [
     },
     {
         id: 7,
-        image: "/Media/Dr_amar_nath.jpg",
+        image: "Media/Dr_amar_nath.jpg",
         name: "Dr. Amar Nath",
         typeOfRespond: "Quick Responder",
         designation: "Assistant Professor",
