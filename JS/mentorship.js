@@ -131,18 +131,18 @@ function showAllMentors() {
         var topMsg='';
         if(bookedSlotsLen === 0){
             topMsg= `<div>
-                        <img src="/Media/slot-machine.png" alt="slot-icon">
+                        <img src="Media/slot-machine.png" alt="slot-icon">
                     </div>
                     Only ${mentor.availableSlots.length} Slots Left`;
         }
         else if(bookedSlotsLen === mentor.availableSlots.length){
             topMsg = `<div>
-            <img src="/Media/slot-machine.png" alt="slot-icon"></div>
+            <img src="Media/slot-machine.png" alt="slot-icon"></div>
             Booked`;
         }
         else{
             topMsg = `<div>
-            <img src="/Media/slot-machine.png" alt="slot-icon"></div>
+            <img src="Media/slot-machine.png" alt="slot-icon"></div>
             ${parseInt(mentor.availableSlots.length)-parseInt(bookedSlotsLen)} Slots Left`;
         }
         if(topMsg !==''){
@@ -160,7 +160,7 @@ function showAllMentors() {
         // create mentor image
         const mentorImageDiv = document.createElement("div");
         mentorImageDiv.classList.add("mentor-image");
-        mentorImageDiv.innerHTML = `<a href="/Html/profile.html?id=${mentor.id}" style="position: relative;" data-mentor-id="${mentor.id}">
+        mentorImageDiv.innerHTML = `<a href="profile.html?id=${mentor.id}" style="position: relative;" data-mentor-id="${mentor.id}">
                             <img src="${mentor.image}" alt="mentor pic" class="wid-100 h-100">
                             <div></div>
                         </a>`;
@@ -171,11 +171,11 @@ function showAllMentors() {
         // create name
         const nameDiv = document.createElement("div");
         nameDiv.classList.add("m-name");
-        nameDiv.innerHTML = `<a href="/Html/profile.html?id=${mentor.id}" data-mentor-id="${mentor.id}">
+        nameDiv.innerHTML = `<a href="profile.html?id=${mentor.id}" data-mentor-id="${mentor.id}">
                                 <h3>${mentor.name}</h3>
                             </a>
                             <div class="respond">
-                                    <img src="/Media/auto-reply.png" alt="">
+                                    <img src="Media/auto-reply.png" alt="">
                                     ${mentor.typeOfRespond}
                             </div>`
         mentor_description.appendChild(nameDiv);
@@ -198,7 +198,7 @@ function showAllMentors() {
         const starInnerDivCont = document.createElement('div');
         for (let index = 0; index < parseInt(mentor.rating.star); index++) {
             const imgElemnt = document.createElement('img');
-            imgElemnt.src = "/Media/star.png";
+            imgElemnt.src = "Media/star.png";
             imgElemnt.alt = "star";
             starInnerDivCont.appendChild(imgElemnt);            
         }
@@ -255,7 +255,7 @@ function showAllMentors() {
         // create profile view button
         const profile_view = document.createElement("div");
         profile_view.classList.add("view-div");
-        profile_view.innerHTML=`<div><span>Free</span></div> <a href="/Html/profile.html?id=${mentor.id}" data-mentor-id="${mentor.id}"><button type="button">View Profile</button></a>`;
+        profile_view.innerHTML=`<div><span>Free</span></div> <a href="profile.html?id=${mentor.id}" data-mentor-id="${mentor.id}"><button type="button">View Profile</button></a>`;
         // add profile button in mentor Card div
         mentor_description.appendChild(profile_view);
         mentor_start.appendChild(mentor_description);
