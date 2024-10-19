@@ -6,7 +6,7 @@
 }
 
 html {
-    font-size: 62.5%; /* 1rem = 10px, easier scaling */
+    font-size: 10px; /* 1rem = 10px, easier scaling */
 }
 
 body {
@@ -133,12 +133,16 @@ body {
     letter-spacing: 1px;
     word-spacing: 5px;
     padding: 2rem;
-    color: navy;
+    color: black;
+    border-radius: 10px;
     font-weight: bolder;
+    margin: 2rem;
     font-family: 'Times New Roman', Times, serif;
     text-transform: capitalize;
     text-decoration: underline;
     text-align: center;
+    box-shadow: 0 0px 4px #0000006b;
+    background-color: #5AB2FF;
 }
 
 /* Layout Adjustments Inside Profile Details */
@@ -147,7 +151,8 @@ body {
     flex-wrap: wrap;
     width: 100%;
     gap: 2rem;
-    background-color: rgb(255, 247, 199);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    background-color: white;
     border-radius: 10px;
 }
 
