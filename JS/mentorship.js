@@ -50,7 +50,7 @@ export const allmentors = [
     },
     {
         id: 4,
-        image: "Media/Dr_Jagdeep_Singh.jpg",
+        image: "Media/Dr_Jagdeep_singh.jpg",
         name: "Dr. Jagdeep Singhr",
         typeOfRespond: "Quick Responder",
         designation: "Assistant Professor",
@@ -66,7 +66,7 @@ export const allmentors = [
     },
     {
         id: 5,
-        image: "Media/Dr_Major_Singh_foraya.jpg",
+        image: "Media/Dr_Major_singh_foraya.jpg",
         name: "Dr. Major Singh Goraya",
         typeOfRespond: "Quick Responder",
         designation: "Professor",
@@ -82,7 +82,7 @@ export const allmentors = [
     },
     {
         id: 6,
-        image: "Media/Dr_Manoj_Sachan.jpg",
+        image: "Media/Dr_Manoj_sachan.jpg",
         name: "Dr. Manoj Sachan",
         typeOfRespond: "Top Mentor",
         designation: "Professor",
