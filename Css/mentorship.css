@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Inter, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.img-w-i{
+    width: 1.2rem;
+}
+.mentor-section{
+    width: 100%;
+    padding: 1rem;
+    /* border: solid 1px red; */
+}
+.mentor-parent{
+    width: 100%;
+    /* border: solid 1px green; */
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    align-items: start;
+    justify-content: center;
+}
+.mentor-slide{
+    /* margin: 0 auto; */
+    width: 48%;
+    border: solid 1px gainsboro;
+    position: relative;
+    border-radius: .5rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mentor-start{
+    width: 100%;
+    /* border: solid 1px rgb(198, 9, 9); */
+    display: flex;
+    column-gap: 2rem;
+    /* align-items: start; */
+}
+.mentor-image{
+    /* border: solid 1px red; */
+    /* width: 20rem; */
+    width: 30%;
+    height: 50%;
+}
+.mentor-image img{
+    border-radius: .5rem;
+    width: 100%;
+    height: 100%;
+}
+/* .mentor-description{
+    border:solid 1px black;
+} */
+.legend-top{
+    display: flex;
+    column-gap: .5rem;
+    position: absolute;
+    right: 2rem;
+    top: -1.5rem;
+    border-radius: 5rem;
+    padding: .5rem 1rem;
+    background-color: #FFFFFF;
+    border: solid 1px rgb(195, 194, 194);
+    /* line-height: 0; */
+    font-size: 1.5rem;
+}
+.legend-top.booked{
+    background-color: red;
+    color:white;
+}
+.legend-top img{
+    width: 1.5rem;
+}
+.m-star{
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.m-star img{
+    width: 1.5rem;
+}
+.m-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.m-name a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+}
+.m-name .respond{
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    padding: .5rem 1rem;
+    background-color:#9ef6e6;
+    border: none;
+    column-gap: .2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.m-name .respond img{
+    width: 1.5rem;
+}
+.m-deg,.m-exp{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.m-exp{
+    color: #118577;
+}
+.m-career{
+    /* border: solid 1px red; */
+    margin-bottom: 1rem;
+}
+.m-career div{
+    display: flex;gap:1rem;flex-wrap:wrap;
+}
+.m-career h3,.m-slots h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.m-career span{
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+}
+.m-slots div{
+    display: flex;gap:1rem;flex-wrap:wrap;
+}
+.m-slots button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgb(6, 200, 74);
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+}
+.m-slots button.booked{
+    background-color: red;
+    color: white;
+    cursor: no-drop;
+    pointer-events: none;
+}
+.view-div{
+    margin-top:  2rem;
+    margin-bottom:  1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+}
+.view-div span{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.view-div button{
+    border: none;
+    outline: none;
+    color: white;
+    width: 20rem;
+    padding: 1rem;
+    background-color: #118577;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.m-desc{
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    overflow-wrap: break-word;
+    font-size: 1.2rem;
+}
+@media screen and  (max-width: 1100px) {
+    .m-name .respond{
+        font-size: .8rem;
+    }
+    .mentor-start .mentor-image{
+        width: 20rem;
+    }
+}
+@media screen and  (max-width: 850px) {
+    html{
+        font-size: 50%;
+    }
+    .mentor-slide{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .mentor-start{
+        flex-direction: column;
+        column-gap: normal;
+    }
+    .mentor-start .mentor-image{
+        width: 50%;
+        height: 20rem;
+        object-fit:contain;
+        margin: auto;
+    }
+}
+@media screen and  (max-width: 640px) {
+    .mentor-start .mentor-image{
+        width: 100%;
+    }
+}

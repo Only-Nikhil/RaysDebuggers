@@ -250,7 +250,13 @@ body {
     cursor: pointer;
     box-shadow: 0px 0px 3px black;
 }
-
+.profile-details button.booked {
+    background-color: red;
+    color: white;
+    cursor: no-drop;
+    border: 1px solid black;
+    pointer-events: none;
+}
 @media (max-width: 1024px) {
     .profile-side-bar {
         width: 35%;
